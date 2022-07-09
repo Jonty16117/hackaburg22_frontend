@@ -9,10 +9,16 @@ function SideNavigation() {
 
     return (
         <div className={styles["root"]}>
-            <Link className={styles[getStyle("/")]} to="/" role='button'>Overview</Link>
-            <Link className={styles[getStyle("/foodInfo")]} to="/foodInfo" role='button'>Food Info</Link>
-            <Link className={styles[getStyle("/parkingInfo")]} to="/parkingInfo" role='button'>Parking Info</Link>
-            <Link className={styles[getStyle("/roomsInfo")]} to="/roomsInfo" role='button'>Rooms Info</Link>
+            <div className={styles["t1"]}>
+                SMART OFFICE
+            </div>
+            <div className={styles["t2"]}>
+                DATA
+            </div>
+            <Link className={styles[getStyle("/")]} to="/" role='button'>General Stats</Link>
+            <Link className={styles[getStyle("/roomsInfo")]} to="/roomsInfo" role='button'>Building Usage</Link>
+            <Link className={styles[getStyle("/foodInfo")]} to="/foodInfo" role='button'>Food Preferences</Link>
+            <Link className={styles[getStyle("/parkingInfo")]} to="/parkingInfo" role='button'>Charging Stations</Link>
         </div>
     )
 }
